@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Lista de Afazeres</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <h1 id="titulo-principal">Lista de Afazeres <span id="tooltiptext">Projeto #1 da 4° edição do DEVInHouse!</span></h1>
+        <a href="https://www.instagram.com/obrunocurcio/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/bruno-curcio-2ab827209/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/BrunoCurcio" class="fa fa-github" target="_blank"></a>  
+    </header>
+    <form id="formulario">
+        <input type="text" id="nova-tarefa" placeholder="Qual a sua próxima tarefa?" autocomplete="off" size="50" maxlength="57">
+        <button type="button" id="botao-adicionar" onclick="adicionarTarefa()">Adicionar tarefa</button>
+    </form>
+    <section id="container">
+        <h3 id="titulo-itens">Seus itens:</h3>
+        <ul id="lista"></ul>
+    </section> 
+<script src="script.js"></script>    
+</body>
+</html>
