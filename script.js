@@ -50,8 +50,10 @@ function criaLi(tarefa) {
       var armazenadosLocalStorage = JSON.parse(localStorage.getItem("local"));
 
       var indexDoItemASerDeletado = armazenadosLocalStorage.indexOf(
-        itemDaLista.children[1].textContent
-      );
+        itemDaLista
+        .children[1]
+        .textContent
+      );  
 
       armazenadosLocalStorage.splice(indexDoItemASerDeletado, 1);
 
